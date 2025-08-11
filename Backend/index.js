@@ -40,3 +40,17 @@ async function run() {
       }
     });
 
+    // Get top 6 recipes by like count
+    app.get('/recipes/top', async (req, res) => {
+      try {
+        const topRecipes = await recipesCollection
+          .find()
+          .sort({ likeCount: -1 })
+          .limit(6)
+          .toArray();
+        res.status(200).json(topRecipes);
+      } catch (err) {
+        res.status(500).json({ success: false, message: 'Failed to retrieve top recipes', error: err.message });
+      }
+    });
+
