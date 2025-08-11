@@ -29,3 +29,14 @@ async function run() {
 
     // Health check
     app.get('/', (req, res) => res.send('Savorly Server is getting Hotter.'));
+
+    // Get all recipes
+    app.get('/recipes', async (req, res) => {
+      try {
+        const recipes = await recipesCollection.find().toArray();
+        res.status(200).json(recipes);
+      } catch (err) {
+        res.status(500).json({ success: false, message: 'Failed to retrieve recipes', error: err.message });
+      }
+    });
+
