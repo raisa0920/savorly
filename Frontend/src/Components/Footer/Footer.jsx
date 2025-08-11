@@ -27,16 +27,16 @@ const Footer = () => {
 
                 
                 <div className="flex justify-center gap-4 sm:gap-6">
-                    <a href="https://www.facebook.com/faisal.ahmed.58115" target="_blank" rel="noreferrer">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                         <FaFacebook className='text-xl sm:text-2xl text-blue-600 btn-hv' />
                     </a>
-                    <a href="https://www.instagram.com/_faisal_ahmed132/" target="_blank" rel="noreferrer">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                         <FaInstagram className='text-xl sm:text-2xl text-pink-500 btn-hv' />
                     </a>
-                    <a href="https://www.linkedin.com/in/faisal-ahmed4417/" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
                         <FaLinkedin className='text-xl sm:text-2xl text-blue-800 btn-hv' />
                     </a>
-                    <a href="https://github.com/faisalahmed3" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/raisa0920/savorly" target="_blank" rel="noreferrer">
                         <FaGithub className='text-xl sm:text-2xl btn-hv' />
                     </a>
                 </div>
