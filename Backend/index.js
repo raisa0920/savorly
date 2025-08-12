@@ -69,4 +69,14 @@ async function run() {
       }
     });
 
+    // Add a new recipe
+    app.post('/recipes', async (req, res) => {
+      const recipe = req.body;
+      try {
+        const result = await recipesCollection.insertOne({ ...recipe, likeCount: 0 });
+        res.status(201).json({ success: true, message: 'Recipe added successfully', insertedId: result.insertedId });
+      } catch (err) {
+        res.status(500).json({ success: false, message: 'Failed to add recipe', error: err.message });
+      }
+    });
 
