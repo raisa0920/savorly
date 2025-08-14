@@ -171,3 +171,9 @@ async function run() {
 }
 
 run().catch(console.dir);
+
+
+// Start server
+app.listen(port, () => {
+  console.log(`Savorly server is running on port ${port}`);
+});
