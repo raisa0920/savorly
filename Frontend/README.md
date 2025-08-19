@@ -6,7 +6,7 @@ Welcome to the **Savorly** frontend! This is a modern and responsive recipe web 
 
 ## 🌍 Live Link
 
-👉 **[Visit Savorly Live](https://savorly-faisal-ahmed.netlify.app/)**
+👉 **[Visit Savorly Live]**
 
 ---
 
