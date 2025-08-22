@@ -2,11 +2,6 @@
 
 Welcome to the **Savorly** frontend! This is a modern and responsive recipe web app built with **React**, **Tailwind CSS**, and **React Router**. Users can view, add, edit, like, and manage their favorite recipes.
 
----
-
-## 🌍 Live Link
-
-👉 **[Visit Savorly Live]**
 
 ---
 
